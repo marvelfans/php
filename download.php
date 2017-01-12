@@ -24,6 +24,7 @@ foreach($data as $k => &$v) {
     unset($vv);
     fputcsv($fp, $v);
 }
+unset($v);
 fclose($fp);
 //
 //// 返回给浏览器
